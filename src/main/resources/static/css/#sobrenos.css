@@ -1,0 +1,938 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ==========================================
+   PALETA DE CORES
+========================================== */
+
+:root {
+    --marrom-escuro: #2b1b14;
+    --marrom: #4a2c20;
+    --marrom-claro: #795548;
+
+    --caramelo: #b87333;
+    --caramelo-claro: #d4a373;
+
+    --creme: #f7f0e6;
+    --bege: #e6d2b5;
+
+    --branco: #fffdf9;
+
+    --texto: #35251d;
+    --texto-claro: #765f53;
+
+    --sombra: rgba(43, 27, 20, 0.15);
+}
+
+
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            rgba(247, 240, 230, 0.95),
+            rgba(247, 240, 230, 0.95)
+        );
+
+    color: var(--texto);
+
+    min-height: 100vh;
+
+    text-align: center;
+}
+
+
+
+header {
+    position: relative;
+
+    width: 100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--marrom-escuro),
+            var(--marrom)
+        );
+
+    color: var(--branco);
+
+    padding: 40px 20px 35px;
+
+    box-shadow:
+        0 8px 25px rgba(43, 27, 20, 0.25);
+}
+
+
+.logo-cafeteria {
+    position: absolute;
+
+    top: 20px;
+    left: 30px;
+
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+
+    background-color: var(--branco);
+
+    padding: 5px;
+
+    border: 3px solid var(--caramelo-claro);
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s ease;
+}
+
+
+.logo-cafeteria:hover {
+    transform: scale(1.08) rotate(3deg);
+}
+
+
+/* ==========================================
+   TÍTULO DO HEADER
+========================================== */
+
+header h1 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+    color: var(--branco);
+
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================
+   SUBTÍTULO
+========================================== */
+
+header p {
+    color: #eadfd7;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* ==========================================
+   MENU
+========================================== */
+
+nav {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==========================================
+   LINKS DO MENU
+========================================== */
+
+nav a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: var(--caramelo);
+
+    color: var(--branco);
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.18);
+
+    transition: all 0.3s ease;
+}
+
+
+/* ==========================================
+   HOVER MENU
+========================================== */
+
+nav a:hover {
+    background-color: var(--caramelo-claro);
+
+    color: var(--marrom-escuro);
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ==========================================
+   TÍTULO DA PÁGINA
+========================================== */
+
+article {
+    padding: 50px 20px 20px;
+}
+
+
+article h2 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    color: var(--marrom-escuro);
+
+    font-size: clamp(2rem, 4vw, 2.8rem);
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ==========================================
+   MAIN
+========================================== */
+
+main {
+    width: 100%;
+
+    padding: 20px 20px 70px;
+}
+
+
+/* ==========================================
+   SEÇÃO SOBRE NÓS
+========================================== */
+
+.sobre-nos {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 35px auto;
+
+    padding: 55px 35px;
+
+    background-color: var(--branco);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px var(--sombra);
+
+    transition: 0.3s ease;
+
+    border: 1px solid rgba(184, 115, 51, 0.08);
+}
+
+
+/* ==========================================
+   EFEITO DA SEÇÃO
+========================================== */
+
+.sobre-nos:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(43, 27, 20, 0.18);
+}
+
+
+/* ==========================================
+   TÍTULO SOBRE
+========================================== */
+
+.titulo-sobre {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(2rem, 5vw, 2.8rem);
+
+    font-weight: 700;
+
+    color: var(--marrom);
+
+    margin-bottom: 30px;
+
+    position: relative;
+
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================
+   DETALHE DO TÍTULO
+========================================== */
+
+.titulo-sobre::after {
+    content: "";
+
+    display: block;
+
+    width: 80px;
+
+    height: 3px;
+
+    background-color: var(--caramelo-claro);
+
+    margin: 12px auto 0;
+
+    border-radius: 10px;
+}
+
+
+/* ==========================================
+   PARÁGRAFOS
+========================================== */
+
+.sobre-nos p {
+    max-width: 850px;
+
+    margin: 0 auto 22px;
+
+    font-family: "Poppins", sans-serif;
+
+    color: var(--texto-claro);
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* ==========================================
+   TEXTO EM DESTAQUE
+========================================== */
+
+.sobre-nos p strong {
+    color: var(--marrom-claro);
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   MISSÃO / VISÃO / VALORES
+========================================== */
+
+.essencia {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.card-essencia {
+    background-color: var(--branco);
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(43, 27, 20, 0.12);
+
+    border-top:
+        4px solid var(--caramelo);
+
+    transition: 0.3s ease;
+}
+
+
+/* ==========================================
+   HOVER DOS CARDS
+========================================== */
+
+.card-essencia:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(43, 27, 20, 0.18);
+}
+
+
+/* ==========================================
+   ÍCONE DOS CARDS
+========================================== */
+
+.card-essencia .icone {
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: var(--creme);
+
+    color: var(--caramelo);
+
+    font-size: 30px;
+
+    border:
+        2px solid var(--caramelo-claro);
+}
+
+
+/* ==========================================
+   TÍTULO DOS CARDS
+========================================== */
+
+.card-essencia h3 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    color: var(--marrom);
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   TEXTO DOS CARDS
+========================================== */
+
+.card-essencia p {
+    color: var(--texto-claro);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   DIFERENCIAIS
+========================================== */
+
+.diferenciais {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ==========================================
+   CARD DIFERENCIAL
+========================================== */
+
+.card-diferencial {
+    background:
+        linear-gradient(
+            145deg,
+            var(--marrom),
+            var(--marrom-escuro)
+        );
+
+    color: var(--branco);
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(43, 27, 20, 0.2);
+
+    transition: 0.3s ease;
+}
+
+
+/* ==========================================
+   HOVER DIFERENCIAL
+========================================== */
+
+.card-diferencial:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 16px 30px rgba(43, 27, 20, 0.3);
+}
+
+
+/* ==========================================
+   TÍTULO DIFERENCIAL
+========================================== */
+
+.card-diferencial h3 {
+    color: var(--caramelo-claro);
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   TEXTO DIFERENCIAL
+========================================== */
+
+.card-diferencial p {
+    color: #e2d6cf;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   BOTÃO
+========================================== */
+
+.botao-cafeteria {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 13px 30px;
+
+    border-radius: 30px;
+
+    background-color: var(--caramelo);
+
+    color: var(--branco);
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s ease;
+}
+
+
+/* ==========================================
+   HOVER BOTÃO
+========================================== */
+
+.botao-cafeteria:hover {
+    background-color: var(--caramelo-claro);
+
+    color: var(--marrom-escuro);
+
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+    background:
+        linear-gradient(
+            135deg,
+            var(--marrom-escuro),
+            var(--marrom)
+        );
+
+    color: var(--branco);
+
+    padding-top: 60px;
+}
+
+
+/* ==========================================
+   CONTAINER FOOTER
+========================================== */
+
+.footer-container {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 45px;
+}
+
+
+/* ==========================================
+   COLUNAS FOOTER
+========================================== */
+
+.footer-coluna h3 {
+    color: var(--caramelo-claro);
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-coluna p {
+    color: #d2c3b9;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   LOGO FOOTER
+========================================== */
+
+.footer-logo {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+    color: var(--branco);
+}
+
+
+.footer-logo span {
+    color: var(--caramelo-claro);
+}
+
+
+/* ==========================================
+   TEXTO FOOTER
+========================================== */
+
+.footer-sobre p {
+    max-width: 350px;
+
+    color: #d2c3b9;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   LISTAS
+========================================== */
+
+.footer-coluna ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+.footer-coluna ul li {
+    margin-bottom: 12px;
+
+    color: #d2c3b9;
+}
+
+
+/* ==========================================
+   LINKS FOOTER
+========================================== */
+
+.footer-coluna a {
+    color: #d2c3b9;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+
+.footer-coluna a:hover {
+    color: var(--caramelo-claro);
+
+    padding-left: 6px;
+}
+
+
+/* ==========================================
+   HORÁRIOS
+========================================== */
+
+.footer-horarios li {
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   PARTE INFERIOR
+========================================== */
+
+.footer-bottom {
+    border-top:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    text-align: center;
+
+    padding: 22px;
+
+    background-color:
+        rgba(0, 0, 0, 0.12);
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #ad9c91;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .essencia {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .diferenciais {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+
+    nav {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    nav a {
+        width: 220px;
+    }
+
+
+    article {
+        padding: 35px 15px 10px;
+    }
+
+
+    article h2 {
+        font-size: 1.7rem;
+    }
+
+
+    main {
+        padding:
+            15px 10px 40px;
+    }
+
+
+    .sobre-nos {
+        width: 100%;
+
+        padding:
+            40px 20px;
+
+        border-radius: 16px;
+    }
+
+
+    .titulo-sobre {
+        font-size: 2rem;
+    }
+
+
+    .sobre-nos p {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+
+    .essencia {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .diferenciais {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 35px;
+    }
+
+
+    .footer-sobre p {
+        margin: auto;
+    }
+
+
+    .footer-coluna a:hover {
+        padding-left: 0;
+    }
+
+
+    .logo-cafeteria {
+        width: 55px;
+
+        height: 55px;
+
+        left: 15px;
+
+        top: 15px;
+    }
+}
+
+
+/* ==========================================
+   CELULARES PEQUENOS
+========================================== */
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+
+    .logo-cafeteria {
+        width: 50px;
+
+        height: 50px;
+    }
+
+
+    .sobre-nos {
+        padding:
+            35px 15px;
+    }
+
+
+    .titulo-sobre {
+        font-size: 1.8rem;
+    }
+
+
+    .card-essencia,
+    .card-diferencial {
+        padding:
+            30px 20px;
+    }
+}

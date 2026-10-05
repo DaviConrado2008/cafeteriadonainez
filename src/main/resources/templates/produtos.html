@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos | Dona Inez</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/produtos.css">
+</head>
+
+<body>
+
+    <header>
+
+
+        <img src="/img/cafeteria.jpg" alt="Logo Dona Inez Café e Bistrô" class="logo-cafeteria">
+
+        <nav class="navbar">
+
+    
+
+            
+                <div class="menu-produtos">
+                <a href="../css/">Início</a>
+                <a href="../templates/">Cafés</a>
+                <a href="../templates/">Doces</a>
+                <a href="../templates/">Salgados</a>
+                <a href="../templates/">Contato</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <section class="carrossel-produtos">
+
+            <div id="carouselProdutos"
+                 class="carousel slide"
+                 data-bs-ride="carousel">
+
+               
+                <div class="carousel-indicators">
+
+                    <button type="button"
+                            data-bs-target="#carouselProdutos"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true">
+                    </button>
+
+                    <button type="button"
+                            data-bs-target="#carouselProdutos"
+                            data-bs-slide-to="1">
+                    </button>
+
+                    <button type="button"
+                            data-bs-target="#carouselProdutos"
+                            data-bs-slide-to="2">
+                    </button>
+
+                </div>
+
+
+           
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <img src="/img/cafeexpresso.jpg"
+                             class="d-block w-100"
+                             alt="Café Expresso">
+
+                        <div class="carousel-caption">
+
+                            
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <img src="/img/brownie.jpg"
+                             class="d-block w-100"
+                             alt="Brownie de Chocolate">
+
+                        <div class="carousel-caption">
+
+                            <h2>Doces que combinam com seu momento</h2>
+
+                            <p>
+                                Brownies, bolos e sobremesas
+                                para deixar seu café ainda melhor.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="carousel-item">
+
+                        <img src="img/croissant.jpg"
+                             class="d-block w-100"
+                             alt="Croissant">
+
+                        <div class="carousel-caption">
+
+                            <h2>Seu café merece um acompanhamento</h2>
+
+                            <p>
+                                Croissants, pães de queijo e
+                                opções deliciosas todos os dias.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            
+                <button class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselProdutos"
+                        data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+
+                </button>
+
+
+              
+                <button class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselProdutos"
+                        data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
+                    <span class="visually-hidden">
+                        Próximo
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+   
+        <section class="cardapio">
+
+            <div class="container">
+
+                <div class="section-title">
+
+        
+
+                    <h2>
+                        Sabores para deixar seu dia mais gostoso
+                    </h2>
+
+                    <p>
+                        Conheça nosso cardápio com cafés especiais,
+                        doces e salgados preparados para você aproveitar
+                        cada momento.
+                    </p>
+
+                </div>
+
+
+        
+                <div class="section-title" id="cafes">
+
+                    <span>☕ Bebidas</span>
+
+                    <h2>
+                        Nossos Cafés
+                    </h2>
+
+                </div>
+
+
+                <div class="produtos-grid">
+
+
+                   
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="img/cafeexpresso.jpg"
+                                 alt="Café Expresso Dona Inez">
+
+                        </div>
+
+                        <div class="produto-info">
+
+                            <h3>
+                                Café Expresso
+                            </h3>
+
+                            <p>
+                                Café intenso e aromático, preparado
+                                com grãos selecionados para proporcionar
+                                um sabor marcante.
+                            </p>
+
+                            <div class="produto-footer">
+
+                                <span class="preco">
+                                    R$ 7,00
+                                </span>
+
+                                <button class="produto-btn">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                   
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="img/cappucino.jpg"
+                                 alt="Cappuccino Dona Inez">
+
+                        </div>
+
+                        <div class="produto-info">
+
+                            <h3>
+                                Cappuccino
+                            </h3>
+
+                            <p>
+                                Café cremoso com leite vaporizado,
+                                espuma e um toque especial de canela.
+                            </p>
+
+                            <div class="produto-footer">
+
+                                <span class="preco">
+                                    R$ 12,00
+                                </span>
+
+                                <button class="produto-btn">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                 
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="img/mocha.jpg"
+                                 alt="Café Mocha">
+
+                        </div>
+
+                        <div class="produto-info">
+
+                            <h3>
+                                Café Mocha
+                            </h3>
+
+                            <p>
+                                Uma combinação deliciosa de café,
+                                chocolate e leite cremoso.
+                            </p>
+
+                            <div class="produto-footer">
+
+                                <span class="preco">
+                                    R$ 14,00
+                                </span>
+
+                                <button class="produto-btn">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                   
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="img/cafegelado.jpg"
+                                 alt="Café Gelado">
+
+                        </div>
+
+                        <div class="produto-info">
+
+                            <h3>
+                                Café Gelado
+                            </h3>
+
+                            <p>
+                                Café refrescante servido com gelo,
+                                perfeito para os dias mais quentes.
+                            </p>
+
+                            <div class="produto-footer">
+
+                                <span class="preco">
+                                    R$ 13,00
+                                </span>
+
+                                <button class="produto-btn">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- DOCES -->
+                <div class="section-title" id="doces">
+
+                    <span>🍰 Sobremesas</span>
+
+                    <h2>
+                        Doces
+                    </h2>
+
+                </div>
+
+
+                <div class="produtos-grid">
+
+
+                    <!-- BOLO -->
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="img/cenoura.jpg"
+                                 alt="Bolo de Cenoura">
+
+                        </div>
+
+                        <div class="produto-info">
+
+                            <h3>
+                                Bolo de Cenoura
+                            </h3>
+
+                            <p>
+                                Bolo de cenoura macio com uma
+                                generosa cobertura de chocolate.
+                            </p>
+
+                            <div class="produto-footer">
+
+                                <span class="preco">
+                                    R$ 10,00
+                                </span>
+
+                                <button class="produto-btn">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CHEESECAKE -->
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="img/cheesecake.jpg"
+                                 alt="Cheesecake">
+
+                        </div>
+
+                        <div class="produto-info">
+
+                            <h3>
+                                Cheesecake
+                            </h3>
+
+                            <p>
+                                Sobremesa cremosa com base crocante
+                                e cobertura de frutas vermelhas.
+                            </p>
+
+                            <div class="produto-footer">
+
+                                <span class="preco">
+                                    R$ 15,00
+                                </span>
+
+                                <button class="produto-btn">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BROWNIE -->
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="img/brownie.jpg"
+                                 alt="Brownie de Chocolate">
+
+                        </div>
+
+                        <div class="produto-info">
+
+                            <h3>
+                                Brownie de Chocolate
+                            </h3>
+
+                            <p>
+                                Chocolate intenso, crocante por fora
+                                e macio por dentro.
+                            </p>
+
+                            <div class="produto-footer">
+
+                                <span class="preco">
+                                    R$ 9,00
+                                </span>
+
+                                <button class="produto-btn">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- SALGADOS -->
+                <div class="section-title" id="salgados">
+
+                    <span>🥐 Acompanhamentos</span>
+
+                    <h2>
+                        Salgados
+                    </h2>
+
+                </div>
+
+
+                <div class="produtos-grid">
+
+
+                    <!-- CROISSANT -->
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="img/croissant.jpg"
+                                 alt="Croissant">
+
+                        </div>
+
+                        <div class="produto-info">
+
+                            <h3>
+                                Croissant
+                            </h3>
+
+                            <p>
+                                Croissant amanteigado, leve e crocante,
+                                preparado diariamente.
+                            </p>
+
+                            <div class="produto-footer">
+
+                                <span class="preco">
+                                    R$ 9,00
+                                </span>
+
+                                <button class="produto-btn">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PÃO DE QUEIJO -->
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="img/paodequeijo.jpg"
+                                 alt="Pão de Queijo">
+
+                        </div>
+
+                        <div class="produto-info">
+
+                            <h3>
+                                Pão de Queijo
+                            </h3>
+
+                            <p>
+                                Tradicional pão de queijo,
+                                crocante por fora e macio por dentro.
+                            </p>
+
+                            <div class="produto-footer">
+
+                                <span class="preco">
+                                    R$ 7,00
+                                </span>
+
+                                <button class="produto-btn">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SANDUÍCHE -->
+                    <article class="produto-card">
+
+                        <div class="produto-img">
+
+                            <img src="img/sanduiche.jpg"
+                                 alt="Sanduíche Artesanal">
+
+                        </div>
+
+                        <div class="produto-info">
+
+                            <h3>
+                                Sanduíche Artesanal
+                            </h3>
+
+                            <p>
+                                Pão artesanal com queijo, presunto,
+                                tomate e folhas frescas.
+                            </p>
+
+                            <div class="produto-footer">
+
+                                <span class="preco">
+                                    R$ 18,00
+                                </span>
+
+                                <button class="produto-btn">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESTAQUE -->
+        <section class="destaque">
+
+            <div class="destaque-content">
+
+                <span>
+                    ☕ UM MOMENTO ESPECIAL
+                </span>
+
+                <h2>
+                    Seu café favorito está esperando por você
+                </h2>
+
+                <p>
+                    Escolha seu café, combine com um acompanhamento
+                    delicioso e aproveite uma experiência especial
+                    na Dona Inez Café e Bistrô.
+                </p>
+
+                <a href="pedidos.html" class="btn btn-primary">
+                    Fazer meu pedido
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer" id="contato">
+
+        <div class="footer-container">
+
+            <div class="footer-coluna footer-sobre">
+
+                <h2 class="footer-logo">
+                    <span>Dona Inez</span>
+                </h2>
+

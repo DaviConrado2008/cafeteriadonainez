@@ -1,0 +1,132 @@
+
+.card {
+    background-color: var(--branco);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(43, 27, 20, 0.15) !important;
+    padding: 35px !important;
+}
+
+.card h2 {
+    color: var(--marrom-escuro);
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--texto-claro);
+    font-size: 16px;
+}
+
+
+
+
+.form-label {
+    color: var(--marrom);
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    height: 48px;
+    border: 2px solid var(--bege);
+    border-radius: 10px;
+    background-color: var(--creme);
+    color: var(--texto);
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    border-color: var(--caramelo);
+    box-shadow: 0 0 0 3px rgba(184, 115, 51, 0.15);
+    background-color: var(--branco);
+}
+
+
+
+
+.btn-primary {
+    background-color: var(--caramelo) !important;
+    border: none !important;
+    color: var(--branco) !important;
+
+    padding: 12px 20px;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--caramelo-claro) !important;
+    color: var(--marrom-escuro) !important;
+    transform: translateY(-2px);
+}
+
+
+
+.btn-secondary {
+    background-color: var(--marrom) !important;
+    border: none !important;
+    color: var(--branco) !important;
+
+    padding: 11px 25px;
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--marrom-claro) !important;
+    color: var(--branco) !important;
+    transform: translateY(-2px);
+}
+
+
+
+.card hr {
+    border: 0;
+    border-top: 1px solid var(--bege);
+    opacity: 1;
+}
+
+
+
+main.container {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 600px) {
+
+    main.container {
+        min-height: 450px;
+        padding: 30px 15px !important;
+    }
+
+    .card {
+        padding: 25px !important;
+        border-radius: 15px;
+    }
+
+    .card h2 {
+        font-size: 27px;
+    }
+
+    .form-control {
+        height: 46px;
+    }
+
+}
